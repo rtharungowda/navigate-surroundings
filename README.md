@@ -1,39 +1,19 @@
-# HITNET-Stereo-Depth-estimation
-Python scripts for performing stereo depth estimation using the [HITNET Tensorflow model from Google Research](https://github.com/google-research/google-research/tree/master/hitnet).
+# [Details](https://github.com/rtharungowda/navigate-surroundings/blob/main/KYS%20slides_ed.pdf)
+# Obj-Det-Stereo-Depth-estimation
+
+Help visually impaired navigate their way using stereo images obatined and depth estimation using triangulation and object detectoin and localization using state of the art YOLOv5 models.
 
 ![Hitnet stereo depth estimation](https://github.com/ibaiGorordo/HITNET-Stereo-Depth-estimation/blob/main/doc/img/out.jpg)
 *Stereo depth estimation on the cones images from the Middlebury dataset (https://vision.middlebury.edu/stereo/data/scenes2003/)*
 
-# Requirements
+## Run
 
- * **OpenCV**, **numpy** and **tensorflo**. **pafy** and **youtube-dl** are required for youtube video inference. 
- * For the drivingStereo dataset, download the data from: https://drivingstereo-dataset.github.io/
+Import and use in google colab to avoid any dependancy issuses and enable gpu for faster inference.
+Run the following in shell to execute code.
 
-# Tensorflow models
-Download the tensorflow models from the [original repository](https://github.com/google-research/google-research/tree/master/hitnet) and save them into the **[models](https://github.com/ibaiGorordo/HITNET-Stereo-Depth-estimation/tree/main/models)** folder. 
-
-# Examples
-
- * **Image inference**:
- 
- ```
- python imageDepthEstimation.py 
- ```
- 
-  * **Video inference**:
- 
- ```
- python videoDepthEstimation.py
- ```
- 
- * **DrivingStereo dataset inference**:
- 
- ```
- python drivingStereoTest.py
- ```
- 
-  # [Inference video Example](https://youtu.be/ge2iN8Ga4Dg) 
- ![!Hitnet stereo depth estimation on video](https://github.com/ibaiGorordo/HITNET-Stereo-Depth-estimation/blob/main/doc/img/hitnetDepthEstimation.gif)
+```
+python3 obj_det_depth.py
+```
 
 # References:
 * Hitnet model: https://github.com/google-research/google-research/tree/master/hitnet
